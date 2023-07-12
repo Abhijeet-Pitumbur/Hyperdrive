@@ -1,0 +1,358 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &44854090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 44854092}
+  - component: {fileID: 44854091}
+  m_Layer: 0
+  m_Name: Drift-Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &44854092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44854090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5211007911807532306}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &44854091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44854090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a0bddfb97fbfb4da04ef8e02113173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  driftMarksMaterial: {fileID: 2100000, guid: 5c4fa5f647c3046469d1868c47f3130f, type: 2}
+--- !u!1 &5211007911274361243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5211007911274361242}
+  - component: {fileID: 5211007911274361221}
+  m_Layer: 0
+  m_Name: Input-Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5211007911274361242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5211007911274361243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5211007911807532306}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5211007911274361221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5211007911274361243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bdd3763aca366047867e843ad8c7720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steerInput: 0
+  throttleInput: 0
+--- !u!1 &5211007911475797201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5211007911475797200}
+  - component: {fileID: 5211007911475797203}
+  m_Layer: 0
+  m_Name: UI-Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5211007911475797200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5211007911475797201}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5211007911807532306}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5211007911475797203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5211007911475797201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d002c770063da24a92fe13508a0cf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownSound: {fileID: 8300000, guid: ecac908c9b72b364a9cf4ea83696b2fe, type: 3}
+  goSound: {fileID: 8300000, guid: 157f90bdf3895c6419585f3aba4ea002, type: 3}
+  finishSound: {fileID: 8300000, guid: 0f97f6a18d1f08e44b62823c789eb38f, type: 3}
+  timerSound: {fileID: 8300000, guid: ef06592a860f6e34aa2710a73b988aaf, type: 3}
+  multipleRevSound: {fileID: 8300000, guid: 57ad1cd704e3bfb46a1e62c72e6d2337, type: 3}
+  singleRevSound: {fileID: 8300000, guid: bcb0c72e0c2aaf943bbedc79968cb32c, type: 3}
+  eliminateSound: {fileID: 8300000, guid: fab311a36da33e3499f20d0dedb0cfd3, type: 3}
+  infectSound: {fileID: 8300000, guid: b0798e68e4faca6469ce133d726f6768, type: 3}
+  disinfectSound: {fileID: 8300000, guid: 9317fe2356e3c0b429bc534e0a2fdf08, type: 3}
+  cameraSwirl: 0
+  cameraSwirlB: 0
+  raceOver: 0
+  raceOverB: 0
+  racePaused: 0
+  raceStarted: 0
+  showingInfo: 0
+  mainCamera: {fileID: 0}
+  mainCameraB: {fileID: 0}
+  buttonsCanvas: {fileID: 0}
+  buttonsCanvas2P: {fileID: 0}
+  countdownCanvas: {fileID: 0}
+  infoCanvas: {fileID: 0}
+  loadingCanvas: {fileID: 0}
+  columnCanvas: {fileID: 0}
+  overCanvas: {fileID: 0}
+  overCanvasA: {fileID: 0}
+  overCanvasB: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  raceCanvas: {fileID: 0}
+  raceCanvasA: {fileID: 0}
+  raceCanvasB: {fileID: 0}
+  resultsCanvas: {fileID: 0}
+  resultsCanvasA: {fileID: 0}
+  resultsCanvasB: {fileID: 0}
+  leaderboardCanvasA: {fileID: 0}
+  leaderboardCanvasB: {fileID: 0}
+  timerCanvas: {fileID: 0}
+  quitCanvas: {fileID: 0}
+  restartCanvas: {fileID: 0}
+  unlockText: {fileID: 0}
+  resultsStars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  numCars: 0
+  confetti: {fileID: 0}
+  confettiB: {fileID: 0}
+  humanCar: {fileID: 0}
+  humanCarB: {fileID: 0}
+  postProcessor: {fileID: 0}
+  countdownText: {fileID: 0}
+  infoText: {fileID: 0}
+  leaderboardName: {fileID: 0}
+  leaderboardTime: {fileID: 0}
+  leaderboardNameA: {fileID: 0}
+  leaderboardTimeA: {fileID: 0}
+  leaderboardNameB: {fileID: 0}
+  leaderboardTimeB: {fileID: 0}
+  timerText: {fileID: 0}
+  currentLapText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  carRankText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  carSpeedText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentTimeText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  lastLapTimeText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bestLapTimeText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  pauseText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  resultsText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  music: {fileID: 0}
+--- !u!1 &5211007911807532304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5211007911807532306}
+  - component: {fileID: 5211007911807532307}
+  m_Layer: 0
+  m_Name: Game-Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5211007911807532306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5211007911807532304}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5211007911274361242}
+  - {fileID: 2506529609737672800}
+  - {fileID: 5211007911475797200}
+  - {fileID: 44854092}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5211007911807532307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5211007911807532304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13299300508f9a74fa083e38788e4831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  driftController: {fileID: 0}
+  carsParent: {fileID: 0}
+  startingPositionsParent: {fileID: 0}
+  inputController: {fileID: 0}
+  inputControllerB: {fileID: 0}
+  numCars: 0
+  numLaps: 0
+  selectedCar: 0
+  selectedCarB: 0
+  selectedLevel: 0
+  cars: []
+  difficultyType: 0
+  gameType: 0
+  mapName: 0
+  raceMode: 0
+  volumeSlider: {fileID: 0}
+  humanCar: {fileID: 0}
+  humanCarB: {fileID: 0}
+  UIController: {fileID: 0}
+--- !u!1 &7741607679989760673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2506529609737672800}
+  - component: {fileID: 9031341866943671934}
+  m_Layer: 0
+  m_Name: Input-Controller-B
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2506529609737672800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741607679989760673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5211007911807532306}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9031341866943671934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741607679989760673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e9c0d092d8d9149b8699c316a3d5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steerInputB: 0
+  throttleInputB: 0
